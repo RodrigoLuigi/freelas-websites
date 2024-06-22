@@ -1,0 +1,351 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Trans Rodolfo - Equipamentos e Máquinas Pesadas</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="fonts/icomoon/icomoon/style.css" type="text/css">
+</head>
+
+<body>
+  <!-- MODAL ORÇAMENTO-->
+  <div class="modal" tabindex="-1" role="dialog" id="minha_caixa">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- MODAL HEADER-->
+        <div class="modal-header">
+          <h5 class="modal-title">PEDIDO DE ORÇAMENTO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+          <!-- FORMULÁRIO DE ORÇAMENTO -->
+          <form action="https://formmail.kinghost.net/formmail.cgi" method="POST"
+            class="col-md-15 footer2 wow bounceInUp" data-wow-delay=".25s" id="orcamento">
+
+            <input type="hidden" name="recipient" value="digaor@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+            <input type="hidden" name="redirect" value="https://www.pousadaecorsini.com.br/TRLRodolfo2/index.html">
+            <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+            <input type="hidden" name="subject" value="Solicitação de Orçamento"> <!-- Assunto da mensagem -->
+            <input type="hidden" name="email" value="pousadaecorsini@pousadaecorsini.com.br">
+            <!-- Deve ser uma conta de email ativa em seu domínio -->
+            <div class="form-box">
+              <h4>PREENCHA O FORMULÁRIO ABAIXO</h4>
+              <table class="table table-responsive d-table">
+                <tr>
+                  <td><input type="text" class="form-control pl-0" placeholder="NOME" name="name" required /></td>
+                  <td><input type="email" class="form-control pl-0" placeholder="EMAIL" name="replyto" required /></td>
+                </tr>
+                <tr>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input type="text" class="form-control pl-0" placeholder="CIDADE / ESTADO"
+                      name="cidade" required /></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ENDEREÇO" name="endereço"
+                      required /></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input type="text" class="form-control pl-0" placeholder="EQUIPAMENTO"
+                      name="Equipamento" required /></td>
+                </tr>
+                <tr>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><textarea type="text" class="form-control pl-0" placeholder="MENSSAGEM"
+                      name="Menssagem" id="textarea" cols="30" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">ENVIAR</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </form>
+        </div>
+
+        <!-- MODAL FOOTER -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /MODAL -->
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav class="navbar navbar-expand-md fixed-top navbar-light">
+    <div class="container">
+
+      <!-- Navbar LOGO -->
+      <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" alt="TRL Equipamentos Logo" /></a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
+          class="navbar-toggler-icon"></span></button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="quemsomos.html">Quem Somos</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="equipamentos.html">Equipamentos</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- BANNER COM FUNDO PARALLAX -->
+  <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll"
+    data-image-src="images/banner.jpg">
+
+    <div class="container">
+      <div class="fh5co-banner-text-box">
+        <div class="quote-box pl-3 pr-5 wow rollIn">
+          <h2> LOCAÇÃO DE EQUIPAMENTOS PESADOS <br><span>PARCERIA ESTRATÉGICA PARA SUA OPERAÇÃO</span> </h2>
+        </div>
+        <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp"
+          onclick="mostrar_modal()">Faça um Orçamento</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- APRESENTAÇÂO DA EMPRESA -->
+  <div class="container-fluid fh5co-network">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="wow bounceInUp">Empresa especializada</h4>
+          <h2 class="wow bounceInDown">Mineração e Infraestrutura</h2>
+          <hr />
+          <h5 class="wow bounceInUp"></h5>
+          <p class="wow bounceInDown">A Trans Rodolfo Ltda. oferece um portfólio completo para atender as suas
+            necessidades em aluguel de equipamentos. São diversos modelos para os segmentos Industriais, Tecnológicos,
+            Entretenimento, Construção Civil, Hospitais, Agronegócio e Mineração que se encaixam na sua empresa , seja
+            com contratos de pequeno, médio ou longo prazo.</p>
+        </div>
+        <div class="col-md-6">
+          <figure class="wow bounceInDown"> <img src="images/sobrenos-img.jpg" alt="sobre nós" class="img-fluid" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOBRE NÓS -->
+  <div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll"
+    data-image-src="images/sobrenos-bg.png">
+    <div class="container">
+      <div class="col-sm-6 offset-sm-6">
+        <h2 class="wow bounceInUp" data-wow-delay=".25s">SOBRE NÓS</h2>
+        <hr />
+        <p class="wow bounceInDown" data-wow-delay=".25s">&nbsp;&nbsp;&nbsp;Somos uma empresa de movimentação de
+          cargas, especializada nos setores de mineração e obras de infraestrutura.
+          &nbsp;Ao longo da nossa história, que se iniciou em 1994, buscamos sempre desenvolver parcerias sólidas com os
+          nossos clientes prezando pela qualidade dos nossos serviços e ética nas relações.
+          &nbsp;Somos apaixonados pelo nosso negócio. Com uma experiência de mais de 2 décadas no setor, estamos em
+          constante evolução, inovando nossos processos de gestão, afim de atender o cliente de maneira única e
+          personalizada, sempre pautados em nossos valores.</p>
+        <a href="./quemsomos.html"
+          class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown">Saiba Mais</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- AREA IMAGES & CARDS -->
+  <div class="container-fluid fh5co-content-box">
+    <div class="container">
+      <!-- IMAGES -->
+      <div class="row">
+        <div class="col-md-5 pr-0"><img src="images/banner2.png" alt="banner caminhão basculante"
+            class="img-fluid wow bounceInUp" /> </div>
+        <div class="col-md-7 pl-0">
+          <div class="wow bounceInDown" data-wow-delay=".25s">
+            <div class="card-img-overlay">
+              <p></p>
+            </div>
+            <img src="images/banner3.png" alt="banner maquinas pesadas" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <!---->
+      <div class="row trainers pl-0 pr-0"> </div>
+
+      <!-- CARDS -->
+      <div class="row gallery">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body mt-4 wow bounceInUp" data-wow-delay=".25s">
+              <h4 class="card-title">ESCAVADEIRAS</h4>
+              <p class="card-text">Fundamental para a engenharia e construção civil, a Escavadeira é responsável por
+                cavar e retirar a terra de aterros sanitários, construções ou áreas de mineração.</p>
+            </div>
+            <img class="card-img-top img-fluid wow bounceInDown" data-wow-delay=".25s" src="images/escavadeira.png"
+              alt="Card escavadeira">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
+              <h4 class="card-title">CAMINHÃO BASCULANTE</h4>
+              <p class="card-text"> Remover, transportar e descarregar todo tipo de material com eficiência e agilidade.
+                Nossos caminhões basculante têm capacidade de 10m3 a 16m3 e estão prontos para fazer parte do seu
+                projeto.</p>
+            </div>
+            <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s"
+              src="images/caminhao-basculante.jpg" alt="Card caminhão basculante">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body mt-4 wow bounceInUp" data-wow-delay=".25s">
+              <h4 class="card-title">CAMINHÃO PIPA</h4>
+              <p class="card-text">Nossos caminhões pipa são completos, equipados com bomba de sucção à vácuo, canhão de
+                bombeiro, espargidor, rabo de pavão e lavador de rua frontal. 10.000 litros a 20.000 litros, escolha o
+                seu. </p>
+            </div>
+            <img class="card-img-top img-fluid wow bounceInDown" data-wow-delay=".25s" src="images/caminhao-pipa.jpg"
+              alt="Card caminhão pipa">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ / ÁREA DE CONTATOS-->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <!-- LOGO E INFORMAÇÕES -->
+        <div class="col-md-3 mb-5 footer1 d-flex wow bounceInDown" data-wow-delay=".25s">
+          <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src="images/logo.png" alt="logo"
+                class="img-fluid" /></a>
+            <p>Nossa equipe possui vasto conhecimento em equipamentos e está habilitada a te ajudar a escolher qual o
+              mais adequado para a sua operação.</p>
+            <p>&copy; 2021 Todos os direitos reservados.<br> Design by <a href="https://linktr.ee/rodrigoluigi"
+                target="_blank">di.G
+                Technology.</a>.</p>
+          </div>
+        </div>
+
+        <!-- FORMULÁRIO DE CONTATO -->
+        <form action="https://formmail.kinghost.net/formmail.cgi" method="POST" class="col-md-6 footer2 wow bounceInUp"
+          data-wow-delay=".25s" id="contact">
+
+          <input type="hidden" name="recipient" value="digaor@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+          <input type="hidden" name="redirect" value="https://www.pousadaecorsini.com.br/TRLRodolfo2/index.html">
+          <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+          <input type="hidden" name="subject" value="Contato pelo Site"> <!-- Assunto da mensagem -->
+          <input type="hidden" name="email" value="pousadaecorsini@pousadaecorsini.com.br">
+          <!-- Deve ser uma conta de email ativa em seu domínio -->
+          <div class="form-box">
+            <h4>CONTATE-NOS</h4>
+            <table class="table table-responsive d-table">
+              <tr>
+                <td><input type="text" class="form-control pl-0" placeholder="NOME" name="name" required /></td>
+                <td><input type="email" class="form-control pl-0" placeholder="EMAIL" name="replyto" required /></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ENDEREÇO" name="address"
+                    required /></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="text" class="form-control pl-0" placeholder="MENSSAGEM" name="Menssagem"
+                    required /></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">ENVIAR</button></td>
+              </tr>
+            </table>
+          </div>
+        </form>
+
+        <!-- ADDRESS / SOCIAL ICONS-->
+        <div class="col-md-3 footer3 wow bounceInDown" data-wow-delay=".25s">
+
+          <!-- ADDRESS -->
+          <h5><i class="icon-location-pin"></i>&nbsp;&nbsp;ENDEREÇO</h5>
+          <p class="p-foot3"><a
+              href="https://www.google.com.br/maps/place/R.+Baldomero+Barbar%C3%A1+Filho,+425,+Ouro+Branco+-+MG,+36420-000/@-20.5115293,-43.7075674,3a,82.2y,46.83h,79.57t/data=!3m6!1e1!3m4!1sA09MtQ1f4H8iaWgUyuLppg!2e0!7i13312!8i6656!4m5!3m4!1s0xa3e4acdd85e231:0xf4a1bd1801a680b9!8m2!3d-20.5115584!4d-43.7074039"
+              target=_blank>R. Baldomero Barbara Filho, nº425, Pioneiros. Ouro Branco - MG.</a></p>
+          <h5><i class="icon-phone2"></i>&nbsp;&nbsp;TELEFONE</h5>
+          <p>+55 (31)98448-9696</p>
+          <h5><i class="icon-mail"></i>&nbsp;&nbsp;EMAIL</h5>
+          <p>rodolfo@trlequipamentos.com.br</p>
+
+          <!-- SOCIAL ICONS-->
+          <div class="social-links">
+            <ul class="nav nav-item">
+              <li><a href="#" id="social-ico" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook2.png"
+                    alt="facebook" /></a></li>
+              <li><a href="#" id="social-ico" class="btn btn-secondary ml-1 mb-2"><img src="images/instagram1.png"
+                    alt="facebook" /></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP ICON -->
+  <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5531984489696&text=Fale%20com%20a%20TRL-Rodolfo%20"
+    target="_blank"><img src="images/whatsapp-icon.png" alt="Contato pelo WhatsApp TRL Equipamentos" /><span>Fale com a
+      gente!</span></a>
+      
+  <!-- GO TOP -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-arrow-up22"></i></button>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Bootstrap JS, ... -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
